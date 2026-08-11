@@ -147,18 +147,30 @@ Aplicação desenvolvida para permitir que usuários pratiquem questões de Port
 
 ---
 
-### Study Tracker
+### Converter SCT
 
-**Aplicação para organização dos estudos.**
+**Conversor de listas de peças do Promob para arquivos de importação do SketchCut.**
 
-Ferramenta desenvolvida para acompanhar disciplinas, conteúdos e evolução dos estudos durante a faculdade.
+Ferramenta web criada a partir de uma necessidade real da marcenaria para automatizar a conversão de listas de peças exportadas pelo Promob para o formato `.sct` utilizado pelo SketchCut.
 
-**Stack:** HTML · CSS · JavaScript
+O sistema elimina a necessidade de digitação manual das peças, reduzindo trabalho repetitivo e possíveis erros de transcrição.
 
-**Destaque:** projeto criado a partir de uma necessidade real, priorizando simplicidade e usabilidade.
+**Stack:** HTML5 · CSS3 · JavaScript · Vercel
 
-[**Ver projeto →**](https://github.com/henriqueptbd-cell/study-tracker)
+**Destaques técnicos:**
 
+- Leitura e interpretação de arquivos exportados pelo Promob
+- Geração automática de arquivos `.sct`
+- Separação das peças por material
+- Suporte a fitagem de bordas
+- Preview das peças antes da exportação
+- Download individual dos arquivos gerados
+- Interface responsiva para PC e celular
+- Aplicação executada diretamente no navegador
+
+[**Ver projeto →**](https://github.com/henriqueptbd-cell/converter-sct)
+
+[**Acessar aplicação →**](https://converter-sct.vercel.app/)
 
 ---
 

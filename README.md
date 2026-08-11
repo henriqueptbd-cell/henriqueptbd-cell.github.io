@@ -147,15 +147,27 @@ Destaque: projeto criado a partir de uma necessidade real, priorizando simplicid
 
 ---
 
-GitHub
+## GitHub
 
 <p align="center">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=henriqueptbd-cell&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=henriqueptbd-cell&layout=compact&langs_count=8&theme=github_dark"/>
-</p><p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=henriqueptbd-cell&theme=github-dark" alt="GitHub Streak" />
-</p>---
+  <img
+    height="180"
+    src="https://github-readme-stats.vercel.app/api?username=henriqueptbd-cell&show_icons=true&theme=github_dark&hide_border=true"
+    alt="Estatísticas do GitHub"
+  />
+  <img
+    height="180"
+    src="https://github-readme-stats.vercel.app/api/top-langs/?username=henriqueptbd-cell&layout=compact&langs_count=8&theme=github_dark&hide_border=true"
+    alt="Principais linguagens"
+  />
+</p>
 
+<p align="center">
+  <img
+    src="https://github-readme-activity-graph.vercel.app/graph?username=henriqueptbd-cell&theme=github-compact&hide_border=true"
+    alt="Gráfico de contribuições"
+  />
+</p>
 Contato
 
 <p align="center">

@@ -159,19 +159,18 @@ Ferramenta desenvolvida para acompanhar disciplinas, conteúdos e evolução dos
 
 [**Ver projeto →**](https://github.com/henriqueptbd-cell/study-tracker)
 
+
 ---
 
 ## GitHub
 
 <p align="center">
   <img
-    height="180"
-    src="https://github-readme-stats.vercel.app/api?username=henriqueptbd-cell&show_icons=true&theme=github_dark&hide_border=true"
+    src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=henriqueptbd-cell&theme=github_dark"
     alt="Estatísticas do GitHub"
   />
   <img
-    height="180"
-    src="https://github-readme-stats.vercel.app/api/top-langs/?username=henriqueptbd-cell&layout=compact&langs_count=8&theme=github_dark&hide_border=true"
+    src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=henriqueptbd-cell&theme=github_dark"
     alt="Principais linguagens"
   />
 </p>

@@ -1,15 +1,15 @@
-<h1 align="center">Henrique Camargo</h1>
+<h1 align="center">Henrique G. Camargo</h1>
 
 <p align="center">
-  <strong>Desenvolvedor Full-Stack</strong> · JavaScript · React · Node.js · PostgreSQL
+  <strong>Desenvolvedor de Software | JavaScript | React | Node.js</strong>
 </p>
 
 <p align="center">
-  Construindo aplicações web com foco em arquitetura, usabilidade e soluções para problemas reais.
+  Desenvolvedor de Software em formação, construindo aplicações web e transformando problemas reais em soluções digitais.
 </p>
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/henrique-camargo-4a923b2b4/">
+  <a href="https://www.linkedin.com/in/henrique-camargo-6275a6394/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   <a href="mailto:henriqueptbd@gmail.com">
@@ -24,153 +24,217 @@
 
 ## Sobre mim
 
-Sou desenvolvedor **Full-Stack** e estudante de Desenvolvimento de Software, com foco no ecossistema JavaScript.
+Sou **Desenvolvedor de Software em formação**, com foco no ecossistema JavaScript e no desenvolvimento de aplicações web utilizando **React, Next.js e Node.js**.
 
-Gosto de transformar problemas reais em sistemas simples, funcionais e escaláveis. Tenho experiência no desenvolvimento de aplicações web completas, trabalhando desde a interface até APIs, banco de dados, autenticação e deploy.
+Tenho mais de uma década de experiência profissional em diferentes áreas, incluindo administração, atendimento ao cliente, compras e controle de estoque.
 
-Atualmente, estou aprofundando meus conhecimentos em **arquitetura de software, desenvolvimento backend e engenharia de software**.
+Em 2020, fundei minha própria marcenaria, construindo o negócio desde sua estruturação inicial. Essa experiência me proporcionou contato direto com clientes, fornecedores, planejamento, processos, gestão e principalmente com a identificação e resolução de problemas reais.
 
-### O que estou fazendo atualmente
+Em 2026, retomei minha formação acadêmica na área de tecnologia por meio da **Graduação Tecnológica em Desenvolvimento de Software Multiplataforma na FATEC**.
 
-- Desenvolvendo aplicações **Full-Stack** com React e Node.js.
-- Aprimorando conhecimentos em **APIs REST, PostgreSQL e autenticação**.
-- Estudando **arquitetura de software e boas práticas de desenvolvimento**.
-- Desenvolvendo projetos próprios para resolver problemas reais.
-- Evoluindo continuamente como desenvolvedor e futuro engenheiro de software.
+Hoje direciono essa experiência para o desenvolvimento de software, criando projetos próprios e acadêmicos enquanto construo minha carreira profissional na área de tecnologia.
 
 ---
 
-## Stack
+## Atualmente
 
-### Frontend
+* 🎓 Cursando **Desenvolvimento de Software Multiplataforma na FATEC**
+* 💻 Desenvolvendo aplicações com **JavaScript, React e Node.js**
+* 🔌 Trabalhando com **APIs REST e integração entre sistemas**
+* 🗄️ Estudando **bancos de dados e desenvolvimento backend**
+* 🏗️ Aprofundando conhecimentos em **arquitetura de software e engenharia de software**
+* 🚀 Desenvolvendo projetos próprios e acadêmicos
+* 🔎 Buscando minha primeira oportunidade profissional na área de desenvolvimento de software
+
+---
+
+## Tecnologias
+
+### Desenvolvimento
 
 <p>
   <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
   <img src="https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white" />
-  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white" />
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-</p>
-
-### Backend
-
-<p>
+  <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" />
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
-  <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" />
 </p>
 
-### Banco de Dados & DevOps
+### Banco de Dados
 
 <p>
   <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
+  <img src="https://img.shields.io/badge/Firebase-FFCA28?style=for-the-badge&logo=firebase&logoColor=black" />
+</p>
+
+### Ferramentas e Plataformas
+
+<p>
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
   <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
+  <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
+  <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" />
+  <img src="https://img.shields.io/badge/Render-46E3B7?style=for-the-badge&logo=render&logoColor=black" />
 </p>
 
 ---
 
 ## Conhecimentos
 
-### Backend
-
-- APIs RESTful
-- Node.js e Express
-- Autenticação com JWT
-- Controle de acesso baseado em funções (RBAC)
-- Middleware
-- Integração com PostgreSQL
-
 ### Frontend
 
-- React
-- JavaScript / TypeScript
-- Componentização
-- Responsividade
-- UX e usabilidade
+* JavaScript / TypeScript
+* React
+* Next.js
+* HTML5 e CSS3
+* Componentização
+* Desenvolvimento responsivo
+* UX e usabilidade
+
+### Backend
+
+* Node.js
+* APIs REST
+* Express
+* Autenticação
+* JWT
+* Middleware
+* Integração com bancos de dados
+* Estruturação e manipulação de dados
 
 ### Engenharia de Software
 
-- Arquitetura de aplicações
-- Metodologias Ágeis
-- Scrum
-- Documentação técnica
-- Git e GitHub
-- Deploy e integração contínua
+* Arquitetura de aplicações
+* Git e GitHub
+* Metodologias Ágeis
+* Scrum
+* Documentação técnica
+* Deploy
+* Fundamentos de Cloud
+* Fundamentos de Cybersecurity
 
 ---
 
 ## Projetos em destaque
 
-### SysConfec
+### 💼 SysConfec
 
-**Sistema web de gestão de pedidos para confecções.**
+**Sistema web de gestão para confecções de uniformes e artigos esportivos.**
 
-Uma aplicação Full-Stack desenvolvida para organizar pedidos, produção e clientes de uma empresa de confecção.
+Projeto Full-Stack desenvolvido para centralizar clientes, pedidos, produção e acompanhamento.
 
-Possui painel de acompanhamento, geração de orçamentos em PDF, link público para clientes e gerenciamento de permissões.
+A aplicação possui gerenciamento de pedidos, acompanhamento da produção, consulta pública para clientes, relatórios, configurações e controle de acesso.
 
-**Stack:** Node.js · Express · PostgreSQL · React · Vite · JWT
+**Stack:** React · Vite · Node.js · Express · PostgreSQL · JWT
 
-**Destaques técnicos:**
+**Principais recursos:**
 
-- Arquitetura multi-tenant
-- Sistema de permissões
-- Autenticação JWT
-- Personalização de identidade visual
-- API REST
-- Integração entre frontend, backend e banco de dados
+* Cadastro e gerenciamento de pedidos
+* Acompanhamento da produção
+* Consulta pública de pedidos
+* Geração de orçamentos em PDF
+* Controle de acesso por função
+* API REST
+* Banco de dados PostgreSQL
+* Personalização da identidade visual
+* Deploy com Render
 
 [**Ver projeto →**](https://github.com/henriqueptbd-cell/SysConfec)
 
 ---
 
-### Simulador de Provas
+### 🎓 Portal de Certificação em Metodologias Ágeis
 
-**Plataforma de simulados para concursos públicos.**
+**Projeto acadêmico desenvolvido em equipe na FATEC.**
 
-Aplicação desenvolvida para permitir que usuários pratiquem questões de Português, Matemática e Raciocínio Lógico em uma experiência semelhante a uma prova real.
+Plataforma criada para permitir a realização de módulos de certificação em metodologias ágeis, com autenticação, controle de tentativas e emissão de certificados.
 
-**Stack:** Node.js · Express · JavaScript · HTML · CSS
+**Stack:** JavaScript · CSS · HTML · Postgres
 
-**Destaques técnicos:**
+**Principais recursos:**
 
-- Cronômetro
-- Gabarito comentado
-- Histórico de desempenho
-- Banco de questões modular
-- Interface responsiva
-- Persistência com localStorage
+* Autenticação por CPF
+* Módulos de certificação
+* Controle de tentativas
+* Organização das questões
+* Emissão de certificados
+* Validação por hash
+
+---
+
+### 📚 Plataforma de Simulados Online
+
+**Aplicação web para realização de simulados.**
+
+Projeto desenvolvido para oferecer uma experiência de estudo com questões organizadas por disciplinas, correção automática e acompanhamento de desempenho.
+
+**Stack:** JavaScript · HTML · CSS · Node.js
+
+**Principais recursos:**
+
+* Banco de questões
+* Correção automática
+* Organização por disciplinas
+* Acompanhamento de desempenho
+* Interface responsiva
 
 [**Ver projeto →**](https://github.com/henriqueptbd-cell/Simulador-Provas)
 
 ---
 
-### Converter SCT
+### 🪚 Converter SCT
 
-**Conversor de listas de peças do Promob para arquivos de importação do SketchCut.**
+**Automação de um processo real identificado na marcenaria.**
 
-Ferramenta web criada a partir de uma necessidade real da marcenaria para automatizar a conversão de listas de peças exportadas pelo Promob para o formato `.sct` utilizado pelo SketchCut.
+Ferramenta desenvolvida para converter listas de peças exportadas pelo Promob para o formato utilizado pelo SketchCut.
 
-O sistema elimina a necessidade de digitação manual das peças, reduzindo trabalho repetitivo e possíveis erros de transcrição.
+O projeto nasceu de uma necessidade real do meu próprio fluxo de trabalho e elimina uma etapa manual e repetitiva da preparação do plano de corte.
 
-**Stack:** HTML5 · CSS3 · JavaScript · Vercel
+**Stack:** HTML5 · CSS3 · JavaScript
 
-**Destaques técnicos:**
+**Principais recursos:**
 
-- Leitura e interpretação de arquivos exportados pelo Promob
-- Geração automática de arquivos `.sct`
-- Separação das peças por material
-- Suporte a fitagem de bordas
-- Preview das peças antes da exportação
-- Download individual dos arquivos gerados
-- Interface responsiva para PC e celular
-- Aplicação executada diretamente no navegador
+* Leitura de arquivos exportados pelo Promob
+* Interpretação das peças
+* Separação por material
+* Tratamento de fitagem
+* Preview dos dados
+* Geração dos arquivos `.sct`
+* Download dos arquivos gerados
+* Interface responsiva
 
 [**Ver projeto →**](https://github.com/henriqueptbd-cell/converter-sct)
 
 [**Acessar aplicação →**](https://converter-sct.vercel.app/)
+
+---
+
+## Formação
+
+### FATEC — Faculdade de Tecnologia do Estado de São Paulo
+
+**Graduação Tecnológica em Desenvolvimento de Software Multiplataforma**
+
+2026 – 2028 · Em andamento
+
+Conclusão prevista para **dezembro de 2028**.
+
+---
+
+## Experiência que trouxe para a tecnologia
+
+Antes de iniciar minha transição para a área de desenvolvimento de software, construí minha experiência profissional trabalhando com **administração, atendimento, compras, estoque e gestão de negócios**.
+
+A experiência mais significativa foi a criação e administração da **HC Marcenaria**, iniciada em 2020.
+
+Foi nesse contexto que comecei a desenvolver soluções digitais para problemas que eu mesmo encontrava na operação.
+
+O **Converter SCT**, por exemplo, nasceu dessa experiência: uma ferramenta criada para eliminar uma tarefa manual e repetitiva do processo de preparação de planos de corte.
+
+Essa combinação entre **experiência de negócio + desenvolvimento de software** influencia a forma como penso meus projetos: primeiro procuro entender o problema, depois penso na solução.
 
 ---
 
@@ -199,7 +263,7 @@ O sistema elimina a necessidade de digitação manual das peças, reduzindo trab
 ## Contato
 
 <p align="center">
-  <a href="https://www.linkedin.com/in/henrique-camargo-4a923b2b4/">LinkedIn</a>
+  <a href="https://www.linkedin.com/in/henrique-camargo-6275a6394/">LinkedIn</a>
   ·
   <a href="mailto:henriqueptbd@gmail.com">E-mail</a>
   ·
@@ -207,5 +271,5 @@ O sistema elimina a necessidade de digitação manual das peças, reduzindo trab
 </p>
 
 <p align="center">
-  <sub>Desenvolvendo, aprendendo e transformando problemas em software.</sub>
+  <sub>Transformando problemas reais em software.</sub>
 </p>

@@ -9,7 +9,7 @@
 </p>
 
 <p align="center">
-  <a href="LINK_DO_SEU_PORTFOLIO">
+  <a href="https://henriqueptbd-cell.github.io/">
     <img src="https://img.shields.io/badge/Portfólio-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfólio" />
   </a>
   <a href="https://www.linkedin.com/in/henrique-camargo-6275a6394/">
@@ -24,7 +24,7 @@
 
 ## Sobre mim
 
-Sou **Desenvolvedor de Software em formação**, com foco no ecossistema JavaScript e no desenvolvimento de aplicações web utilizando **React, Next.js e Node.js**.
+Sou **Desenvolvedor de Software em formação**, com foco no ecossistema JavaScript e no desenvolvimento de aplicações web utilizando **React e Node.js**.
 
 Tenho mais de uma década de experiência profissional em diferentes áreas, incluindo administração, atendimento ao cliente, compras e controle de estoque.
 
@@ -58,7 +58,6 @@ Meu objetivo é ingressar profissionalmente na área de desenvolvimento de softw
   <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
-  <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" />
   <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
 </p>
 
@@ -88,7 +87,6 @@ Meu objetivo é ingressar profissionalmente na área de desenvolvimento de softw
 
 - JavaScript / TypeScript
 - React
-- Next.js
 - HTML5 e CSS3
 - Componentização
 - Desenvolvimento responsivo

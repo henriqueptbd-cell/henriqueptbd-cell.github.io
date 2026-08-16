@@ -9,14 +9,14 @@
 </p>
 
 <p align="center">
+  <a href="LINK_DO_SEU_PORTFOLIO">
+    <img src="https://img.shields.io/badge/Portfólio-2563EB?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfólio" />
+  </a>
   <a href="https://www.linkedin.com/in/henrique-camargo-6275a6394/">
     <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
   </a>
   <a href="mailto:henriqueptbd@gmail.com">
     <img src="https://img.shields.io/badge/E--mail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="E-mail" />
-  </a>
-  <a href="https://github.com/henriqueptbd-cell">
-    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
   </a>
 </p>
 
@@ -28,7 +28,7 @@ Sou **Desenvolvedor de Software em formação**, com foco no ecossistema JavaScr
 
 Tenho mais de uma década de experiência profissional em diferentes áreas, incluindo administração, atendimento ao cliente, compras e controle de estoque.
 
-Em 2020, fundei minha própria marcenaria, construindo o negócio desde sua estruturação inicial. Essa experiência me proporcionou contato direto com clientes, fornecedores, planejamento, processos, gestão e principalmente com a identificação e resolução de problemas reais.
+Em 2020, fundei minha própria marcenaria, construindo o negócio desde sua estruturação inicial. Essa experiência me proporcionou contato direto com clientes, fornecedores, planejamento, processos, gestão e, principalmente, com a identificação e resolução de problemas reais.
 
 Em 2026, retomei minha formação acadêmica na área de tecnologia por meio da **Graduação Tecnológica em Desenvolvimento de Software Multiplataforma na FATEC**.
 
@@ -38,13 +38,13 @@ Hoje direciono essa experiência para o desenvolvimento de software, criando pro
 
 ## Atualmente
 
-* 🎓 Cursando **Desenvolvimento de Software Multiplataforma na FATEC**
-* 💻 Desenvolvendo aplicações com **JavaScript, React e Node.js**
-* 🔌 Trabalhando com **APIs REST e integração entre sistemas**
-* 🗄️ Estudando **bancos de dados e desenvolvimento backend**
-* 🏗️ Aprofundando conhecimentos em **arquitetura de software e engenharia de software**
-* 🚀 Desenvolvendo projetos próprios e acadêmicos
-* 🔎 Buscando minha primeira oportunidade profissional na área de desenvolvimento de software
+Estou construindo minha carreira em desenvolvimento de software enquanto curso **Desenvolvimento de Software Multiplataforma na FATEC**.
+
+Atualmente tenho direcionado meus estudos e projetos para o ecossistema **JavaScript**, com experiência prática em desenvolvimento frontend, backend, APIs REST e bancos de dados.
+
+Também estou aprofundando meus conhecimentos em **arquitetura de software, engenharia de software, metodologias ágeis e desenvolvimento backend**.
+
+Meu objetivo é ingressar profissionalmente na área de desenvolvimento de software e continuar evoluindo através de projetos reais e desafios técnicos.
 
 ---
 
@@ -86,35 +86,35 @@ Hoje direciono essa experiência para o desenvolvimento de software, criando pro
 
 ### Frontend
 
-* JavaScript / TypeScript
-* React
-* Next.js
-* HTML5 e CSS3
-* Componentização
-* Desenvolvimento responsivo
-* UX e usabilidade
+- JavaScript / TypeScript
+- React
+- Next.js
+- HTML5 e CSS3
+- Componentização
+- Desenvolvimento responsivo
+- UX e usabilidade
 
 ### Backend
 
-* Node.js
-* APIs REST
-* Express
-* Autenticação
-* JWT
-* Middleware
-* Integração com bancos de dados
-* Estruturação e manipulação de dados
+- Node.js
+- APIs REST
+- Express
+- Autenticação
+- JWT
+- Middleware
+- Integração com bancos de dados
+- Estruturação e manipulação de dados
 
 ### Engenharia de Software
 
-* Arquitetura de aplicações
-* Git e GitHub
-* Metodologias Ágeis
-* Scrum
-* Documentação técnica
-* Deploy
-* Fundamentos de Cloud
-* Fundamentos de Cybersecurity
+- Arquitetura de aplicações
+- Git e GitHub
+- Metodologias Ágeis
+- Scrum
+- Documentação técnica
+- Deploy
+- Fundamentos de Cloud
+- Fundamentos de Cybersecurity
 
 ---
 
@@ -132,36 +132,63 @@ A aplicação possui gerenciamento de pedidos, acompanhamento da produção, con
 
 **Principais recursos:**
 
-* Cadastro e gerenciamento de pedidos
-* Acompanhamento da produção
-* Consulta pública de pedidos
-* Geração de orçamentos em PDF
-* Controle de acesso por função
-* API REST
-* Banco de dados PostgreSQL
-* Personalização da identidade visual
-* Deploy com Render
+- Cadastro e gerenciamento de pedidos
+- Acompanhamento da produção
+- Consulta pública de pedidos
+- Geração de orçamentos em PDF
+- Controle de acesso por função
+- API REST
+- Banco de dados PostgreSQL
+- Personalização da identidade visual
+- Deploy com Render
 
 [**Ver projeto →**](https://github.com/henriqueptbd-cell/SysConfec)
 
 ---
 
-### 🎓 Portal de Certificação em Metodologias Ágeis
+### 🎓 ScrumFlow — Portal de Certificação em Metodologias Ágeis
 
-**Projeto acadêmico desenvolvido em equipe na FATEC.**
+**Projeto acadêmico desenvolvido em equipe na FATEC Jacareí durante o 1º semestre de 2026.**
 
-Plataforma criada para permitir a realização de módulos de certificação em metodologias ágeis, com autenticação, controle de tentativas e emissão de certificados.
+Plataforma criada para permitir a realização de módulos progressivos de certificação em metodologias ágeis, com autenticação, controle de tentativas, acompanhamento de progresso e emissão de certificados digitais.
 
-**Stack:** JavaScript · CSS · HTML · Postgres
+Atuei como desenvolvedor durante as três sprints, com foco principal no **frontend e na integração com o backend**, além de colaborar na documentação, UX/UI e nas entregas da equipe.
+
+**Stack:** HTML5 · CSS3 · JavaScript · Node.js · Express · PostgreSQL · JWT
 
 **Principais recursos:**
 
-* Autenticação por CPF
-* Módulos de certificação
-* Controle de tentativas
-* Organização das questões
-* Emissão de certificados
-* Validação por hash
+- Autenticação por CPF
+- Autenticação com JWT
+- Módulos progressivos de certificação
+- Sorteio e organização das questões
+- Controle de tentativas
+- Histórico de respostas
+- Dashboard de progresso
+- Emissão de certificados digitais
+- Validação de certificados por hash
+- Painel administrativo
+- CRUD de questões e módulos
+- Integração entre frontend, backend e banco de dados
+
+**Minha contribuição:**
+
+- Estrutura inicial do frontend
+- Prototipação e identidade visual
+- Páginas de cadastro e login
+- Validação de formulários
+- Integração com API utilizando `fetch`
+- Lógica de sorteio de questões
+- Controle de tentativas
+- Telas de resultado e histórico
+- Colaboração na geração do certificado
+- Melhorias de UX/UI
+- Participação na construção do painel administrativo
+- Documentação técnica
+- Participação nas cerimônias Scrum
+- Utilização de Git Flow
+
+[**Ver projeto →**](https://github.com/DEVassos/scrum-flow-abp)
 
 ---
 
@@ -171,15 +198,18 @@ Plataforma criada para permitir a realização de módulos de certificação em 
 
 Projeto desenvolvido para oferecer uma experiência de estudo com questões organizadas por disciplinas, correção automática e acompanhamento de desempenho.
 
-**Stack:** JavaScript · HTML · CSS · Node.js
+O projeto utiliza uma estrutura simples para armazenamento das questões, permitindo testar a lógica da aplicação sem depender inicialmente de um banco de dados tradicional.
+
+**Stack:** JavaScript · HTML5 · CSS3 · Node.js
 
 **Principais recursos:**
 
-* Banco de questões
-* Correção automática
-* Organização por disciplinas
-* Acompanhamento de desempenho
-* Interface responsiva
+- Banco de questões estruturado
+- Organização por disciplinas
+- Correção automática
+- Acompanhamento de desempenho
+- Interface responsiva
+- Estrutura preparada para evolução
 
 [**Ver projeto →**](https://github.com/henriqueptbd-cell/Simulador-Provas)
 
@@ -197,14 +227,15 @@ O projeto nasceu de uma necessidade real do meu próprio fluxo de trabalho e eli
 
 **Principais recursos:**
 
-* Leitura de arquivos exportados pelo Promob
-* Interpretação das peças
-* Separação por material
-* Tratamento de fitagem
-* Preview dos dados
-* Geração dos arquivos `.sct`
-* Download dos arquivos gerados
-* Interface responsiva
+- Leitura de arquivos exportados pelo Promob
+- Interpretação das peças
+- Separação por material
+- Tratamento de fitagem
+- Preview dos dados
+- Geração dos arquivos `.sct`
+- Download dos arquivos gerados
+- Interface responsiva
+- Execução diretamente no navegador
 
 [**Ver projeto →**](https://github.com/henriqueptbd-cell/converter-sct)
 
@@ -263,6 +294,8 @@ Essa combinação entre **experiência de negócio + desenvolvimento de software
 ## Contato
 
 <p align="center">
+  <a href="LINK_DO_SEU_PORTFOLIO">Portfólio</a>
+  ·
   <a href="https://www.linkedin.com/in/henrique-camargo-6275a6394/">LinkedIn</a>
   ·
   <a href="mailto:henriqueptbd@gmail.com">E-mail</a>

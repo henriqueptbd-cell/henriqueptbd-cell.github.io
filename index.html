@@ -6,11 +6,944 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Portfólio de Henrique G. Camargo, Desenvolvedor de Software em formação.">
+    <meta name="description"
+        content="Henrique G. Camargo — Desenvolvedor de Software em formação, com foco em JavaScript, React e Node.js.">
+
+    <meta name="author" content="Henrique G. Camargo">
 
     <title>Henrique G. Camargo | Desenvolvedor de Software</title>
 
-    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family:
+                Inter,
+                -apple-system,
+                BlinkMacSystemFont,
+                "Segoe UI",
+                Roboto,
+                Arial,
+                sans-serif;
+
+            background: #0b1120;
+            color: #e5e7eb;
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* =====================================================
+           VARIABLES
+        ===================================================== */
+
+        :root {
+            --background: #0b1120;
+            --background-light: #111827;
+            --card: #111827;
+            --card-hover: #172033;
+
+            --text: #f9fafb;
+            --text-secondary: #9ca3af;
+
+            --primary: #60a5fa;
+            --primary-dark: #3b82f6;
+
+            --border: rgba(255, 255, 255, 0.08);
+
+            --max-width: 1120px;
+        }
+
+        /* =====================================================
+           CONTAINER
+        ===================================================== */
+
+        .container {
+            width: min(calc(100% - 40px),
+                    var(--max-width));
+
+            margin: 0 auto;
+        }
+
+        /* =====================================================
+           HEADER
+        ===================================================== */
+
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+
+            z-index: 1000;
+
+            background: rgba(11, 17, 32, 0.75);
+
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
+
+            border-bottom: 1px solid transparent;
+
+            transition:
+                background 0.3s ease,
+                border-color 0.3s ease,
+                box-shadow 0.3s ease;
+        }
+
+        .header-scrolled {
+            background: rgba(11, 17, 32, 0.95);
+            border-color: var(--border);
+
+            box-shadow:
+                0 10px 30px rgba(0, 0, 0, 0.25);
+        }
+
+        .header-content {
+            height: 72px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-size: 1.1rem;
+            font-weight: 700;
+
+            letter-spacing: -0.02em;
+        }
+
+        .logo span {
+            color: var(--primary);
+        }
+
+        .navigation {
+            display: flex;
+            align-items: center;
+            gap: 28px;
+        }
+
+        .navigation a {
+            color: var(--text-secondary);
+
+            font-size: 0.9rem;
+            font-weight: 500;
+
+            transition:
+                color 0.2s ease;
+        }
+
+        .navigation a:hover {
+            color: var(--text);
+        }
+
+        .menu-button {
+            display: none;
+
+            border: 0;
+            background: transparent;
+
+            color: var(--text);
+
+            font-size: 1.6rem;
+
+            cursor: pointer;
+        }
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .hero {
+            min-height: 100vh;
+
+            display: flex;
+            align-items: center;
+
+            padding-top: 72px;
+
+            background:
+                radial-gradient(circle at 80% 20%,
+                    rgba(59, 130, 246, 0.12),
+                    transparent 30%),
+                var(--background);
+        }
+
+        .hero-content {
+            display: grid;
+
+            grid-template-columns:
+                minmax(0, 1.3fr) minmax(280px, 0.7fr);
+
+            gap: 70px;
+
+            align-items: center;
+        }
+
+        .hero-text {
+            max-width: 700px;
+        }
+
+        .eyebrow {
+            display: inline-block;
+
+            margin-bottom: 18px;
+
+            color: var(--primary);
+
+            font-size: 0.9rem;
+            font-weight: 600;
+
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.8rem,
+                    7vw,
+                    5.5rem);
+
+            line-height: 0.98;
+
+            letter-spacing: -0.06em;
+
+            margin-bottom: 24px;
+        }
+
+        .hero h1 span {
+            color: var(--primary);
+        }
+
+        .hero-role {
+            font-size: clamp(1.2rem,
+                    3vw,
+                    1.7rem);
+
+            color: var(--text-secondary);
+
+            margin-bottom: 20px;
+        }
+
+        .hero-description {
+            max-width: 650px;
+
+            color: var(--text-secondary);
+
+            font-size: 1.05rem;
+        }
+
+        .hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+
+            gap: 14px;
+
+            margin-top: 32px;
+        }
+
+        .button {
+            display: inline-flex;
+
+            align-items: center;
+            justify-content: center;
+
+            padding: 12px 20px;
+
+            border-radius: 8px;
+
+            font-size: 0.9rem;
+            font-weight: 600;
+
+            transition:
+                transform 0.2s ease,
+                background 0.2s ease,
+                border-color 0.2s ease;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+        }
+
+        .button-primary {
+            background: var(--primary-dark);
+            color: white;
+        }
+
+        .button-primary:hover {
+            background: #2563eb;
+        }
+
+        .button-secondary {
+            border: 1px solid var(--border);
+            background: rgba(255, 255, 255, 0.03);
+            color: var(--text);
+        }
+
+        .button-secondary:hover {
+            border-color: rgba(255, 255, 255, 0.18);
+            background: rgba(255, 255, 255, 0.06);
+        }
+
+        /* =====================================================
+           PROFILE
+        ===================================================== */
+
+        .profile-wrapper {
+            display: flex;
+            justify-content: center;
+        }
+
+        .profile-card {
+            width: 280px;
+
+            padding: 18px;
+
+            border-radius: 20px;
+
+            border: 1px solid var(--border);
+
+            background:
+                linear-gradient(145deg,
+                    rgba(255, 255, 255, 0.06),
+                    rgba(255, 255, 255, 0.02));
+
+            box-shadow:
+                0 30px 80px rgba(0, 0, 0, 0.3);
+        }
+
+        .profile-image {
+            width: 100%;
+            aspect-ratio: 1;
+
+            object-fit: cover;
+
+            border-radius: 14px;
+
+            background: #1f2937;
+        }
+
+        .profile-info {
+            padding: 18px 4px 4px;
+        }
+
+        .profile-info strong {
+            display: block;
+
+            font-size: 1rem;
+
+            margin-bottom: 4px;
+        }
+
+        .profile-info span {
+            color: var(--text-secondary);
+
+            font-size: 0.85rem;
+        }
+
+        /* =====================================================
+           SECTIONS
+        ===================================================== */
+
+        section {
+            scroll-margin-top: 90px;
+        }
+
+        .section {
+            padding: 110px 0;
+        }
+
+        .section-alt {
+            background: #0e1628;
+        }
+
+        .section-header {
+            max-width: 720px;
+
+            margin-bottom: 48px;
+        }
+
+        .section-label {
+            display: block;
+
+            margin-bottom: 10px;
+
+            color: var(--primary);
+
+            font-size: 0.8rem;
+            font-weight: 700;
+
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+        }
+
+        .section h2 {
+            font-size: clamp(2rem,
+                    5vw,
+                    3rem);
+
+            line-height: 1.1;
+
+            letter-spacing: -0.04em;
+
+            margin-bottom: 18px;
+        }
+
+        .section-intro {
+            color: var(--text-secondary);
+
+            font-size: 1.05rem;
+        }
+
+        /* =====================================================
+           ABOUT
+        ===================================================== */
+
+        .about-grid {
+            display: grid;
+
+            grid-template-columns:
+                1.4fr 0.6fr;
+
+            gap: 60px;
+        }
+
+        .about-text p {
+            color: var(--text-secondary);
+
+            margin-bottom: 18px;
+        }
+
+        .about-text strong {
+            color: var(--text);
+        }
+
+        .about-highlight {
+            padding: 28px;
+
+            border-left:
+                2px solid var(--primary);
+
+            background:
+                rgba(255, 255, 255, 0.025);
+        }
+
+        .about-highlight strong {
+            display: block;
+
+            font-size: 1.1rem;
+
+            margin-bottom: 12px;
+        }
+
+        .about-highlight p {
+            color: var(--text-secondary);
+
+            font-size: 0.95rem;
+        }
+
+        /* =====================================================
+           TECHNOLOGIES
+        ===================================================== */
+
+        .technology-grid {
+            display: grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap: 20px;
+        }
+
+        .technology-card {
+            padding: 26px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 12px;
+
+            background: var(--card);
+        }
+
+        .technology-card h3 {
+            margin-bottom: 16px;
+
+            font-size: 1.05rem;
+        }
+
+        .technology-list {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 8px;
+        }
+
+        .technology-tag {
+            padding: 6px 10px;
+
+            border-radius: 6px;
+
+            background:
+                rgba(96, 165, 250, 0.08);
+
+            border:
+                1px solid rgba(96, 165, 250, 0.12);
+
+            color: #bfdbfe;
+
+            font-size: 0.8rem;
+        }
+
+        /* =====================================================
+           PROJECTS
+        ===================================================== */
+
+        .projects {
+            display: grid;
+
+            grid-template-columns:
+                repeat(2, 1fr);
+
+            gap: 24px;
+        }
+
+        .project-card {
+            display: flex;
+            flex-direction: column;
+
+            padding: 30px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 14px;
+
+            background: var(--card);
+
+            transition:
+                transform 0.25s ease,
+                background 0.25s ease,
+                border-color 0.25s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+
+            background: var(--card-hover);
+
+            border-color:
+                rgba(96, 165, 250, 0.22);
+        }
+
+        .project-type {
+            margin-bottom: 12px;
+
+            color: var(--primary);
+
+            font-size: 0.75rem;
+            font-weight: 700;
+
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+
+        .project-card h3 {
+            font-size: 1.45rem;
+
+            margin-bottom: 12px;
+        }
+
+        .project-card p {
+            color: var(--text-secondary);
+
+            font-size: 0.92rem;
+
+            margin-bottom: 20px;
+        }
+
+        .project-stack {
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 7px;
+
+            margin-bottom: 24px;
+        }
+
+        .project-stack span {
+            color: #cbd5e1;
+
+            font-size: 0.75rem;
+
+            padding: 4px 8px;
+
+            border-radius: 5px;
+
+            background: rgba(255, 255, 255, 0.05);
+        }
+
+        .project-links {
+            display: flex;
+
+            gap: 18px;
+
+            margin-top: auto;
+        }
+
+        .project-links a {
+            color: var(--primary);
+
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .project-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* =====================================================
+           EXPERIENCE
+        ===================================================== */
+
+        .timeline {
+            position: relative;
+
+            max-width: 850px;
+
+            border-left:
+                1px solid var(--border);
+
+            margin-left: 10px;
+        }
+
+        .timeline-item {
+            position: relative;
+
+            padding:
+                0 0 50px 35px;
+        }
+
+        .timeline-item:last-child {
+            padding-bottom: 0;
+        }
+
+        .timeline-item::before {
+            content: "";
+
+            position: absolute;
+
+            left: -5px;
+            top: 5px;
+
+            width: 9px;
+            height: 9px;
+
+            border-radius: 50%;
+
+            background: var(--primary);
+
+            box-shadow:
+                0 0 0 5px var(--background);
+        }
+
+        .section-alt .timeline-item::before {
+            box-shadow:
+                0 0 0 5px #0e1628;
+        }
+
+        .timeline-date {
+            color: var(--primary);
+
+            font-size: 0.8rem;
+            font-weight: 600;
+
+            margin-bottom: 7px;
+        }
+
+        .timeline-item h3 {
+            font-size: 1.25rem;
+
+            margin-bottom: 4px;
+        }
+
+        .timeline-role {
+            color: var(--text-secondary);
+
+            font-size: 0.9rem;
+
+            margin-bottom: 12px;
+        }
+
+        .timeline-item p {
+            color: var(--text-secondary);
+
+            font-size: 0.92rem;
+        }
+
+        /* =====================================================
+           EDUCATION
+        ===================================================== */
+
+        .education-card {
+            max-width: 800px;
+
+            padding: 30px;
+
+            border:
+                1px solid var(--border);
+
+            border-radius: 14px;
+
+            background: var(--card);
+        }
+
+        .education-card h3 {
+            font-size: 1.3rem;
+
+            margin-bottom: 6px;
+        }
+
+        .education-card .institution {
+            color: var(--primary);
+
+            margin-bottom: 15px;
+        }
+
+        .education-card p {
+            color: var(--text-secondary);
+        }
+
+        /* =====================================================
+           CONTACT
+        ===================================================== */
+
+        .contact {
+            text-align: center;
+
+            max-width: 720px;
+
+            margin: 0 auto;
+        }
+
+        .contact p {
+            color: var(--text-secondary);
+
+            margin-bottom: 28px;
+        }
+
+        .contact-links {
+            display: flex;
+
+            justify-content: center;
+
+            flex-wrap: wrap;
+
+            gap: 12px;
+        }
+
+        /* =====================================================
+           FOOTER
+        ===================================================== */
+
+        footer {
+            padding: 30px 0;
+
+            border-top:
+                1px solid var(--border);
+
+            color: var(--text-secondary);
+
+            font-size: 0.8rem;
+
+            text-align: center;
+        }
+
+        /* =====================================================
+           REVEAL ANIMATION
+        ===================================================== */
+
+        .reveal {
+            opacity: 0;
+
+            transform: translateY(20px);
+
+            transition:
+                opacity 0.7s ease,
+                transform 0.7s ease;
+        }
+
+        .reveal-visible {
+            opacity: 1;
+
+            transform: translateY(0);
+        }
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media (max-width: 850px) {
+
+            .hero-content {
+                grid-template-columns: 1fr;
+
+                gap: 40px;
+            }
+
+            .profile-wrapper {
+                justify-content: flex-start;
+            }
+
+            .profile-card {
+                width: 220px;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+
+                gap: 30px;
+            }
+
+            .technology-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .projects {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+        @media (max-width: 700px) {
+
+            .container {
+                width:
+                    min(calc(100% - 28px),
+                        var(--max-width));
+            }
+
+            .header-content {
+                height: 64px;
+            }
+
+            .navigation {
+                position: absolute;
+
+                top: 64px;
+                left: 0;
+
+                width: 100%;
+
+                display: none;
+
+                flex-direction: column;
+
+                align-items: flex-start;
+
+                gap: 0;
+
+                padding: 10px 14px 18px;
+
+                background:
+                    rgba(11, 17, 32, 0.98);
+
+                border-bottom:
+                    1px solid var(--border);
+            }
+
+            .navigation-open {
+                display: flex;
+            }
+
+            .navigation a {
+                width: 100%;
+
+                padding: 12px 0;
+            }
+
+            .menu-button {
+                display: block;
+            }
+
+            .hero {
+                padding-top: 110px;
+
+                min-height: auto;
+
+                padding-bottom: 90px;
+            }
+
+            .hero h1 {
+                font-size: 3rem;
+            }
+
+            .hero-actions {
+                flex-direction: column;
+
+                align-items: stretch;
+            }
+
+            .button {
+                width: 100%;
+            }
+
+            .section {
+                padding: 80px 0;
+            }
+
+            .profile-wrapper {
+                justify-content: center;
+            }
+
+            .profile-card {
+                width: 210px;
+            }
+
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+
+            html {
+                scroll-behavior: auto;
+            }
+
+            *,
+            *::before,
+            *::after {
+                transition: none !important;
+                animation: none !important;
+            }
+
+            .reveal {
+                opacity: 1;
+
+                transform: none;
+            }
+
+        }
+    </style>
 </head>
 
 <body>
@@ -21,31 +954,43 @@
 
     <header class="header">
 
-        <div class="container header-container">
+        <div class="container header-content">
 
             <a href="#inicio" class="logo">
                 Henrique<span>.</span>
             </a>
 
-            <button id="menu-button" class="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false">
-                ☰
-            </button>
+            <nav class="navigation">
 
-            <nav id="navigation" class="navigation">
+                <a href="#sobre">
+                    Sobre
+                </a>
 
-                <a href="#inicio">Início</a>
+                <a href="#tecnologias">
+                    Tecnologias
+                </a>
 
-                <a href="#sobre">Sobre</a>
+                <a href="#projetos">
+                    Projetos
+                </a>
 
-                <a href="#projetos">Projetos</a>
+                <a href="#experiencia">
+                    Experiência
+                </a>
 
-                <a href="#experiencia">Experiência</a>
+                <a href="#formacao">
+                    Formação
+                </a>
 
-                <a href="#formacao">Formação</a>
-
-                <a href="#contato">Contato</a>
+                <a href="#contato">
+                    Contato
+                </a>
 
             </nav>
+
+            <button class="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false">
+                ☰
+            </button>
 
         </div>
 
@@ -60,43 +1005,44 @@
 
         <section id="inicio" class="hero">
 
-            <div class="container hero-container">
+            <div class="container hero-content">
 
-                <div class="hero-content reveal">
+                <div class="hero-text reveal">
 
-                    <p class="hero-overline">
-                        Desenvolvedor de Software em formação
-                    </p>
+                    <span class="eyebrow">
+                        Desenvolvedor de Software
+                    </span>
 
                     <h1>
-                        Olá, eu sou
-                        <span>Henrique G. Camargo</span>
+                        Henrique G.
+                        <span>Camargo</span>
                     </h1>
 
-                    <p class="hero-description">
-                        Desenvolvedor focado no ecossistema JavaScript,
-                        criando aplicações web e transformando problemas
-                        reais em soluções digitais.
+                    <p class="hero-role">
+                        JavaScript · React · Node.js · PostgreSQL
                     </p>
 
-                    <div class="hero-technologies">
-
-                        <span>JavaScript</span>
-                        <span>React</span>
-                        <span>Node.js</span>
-                        <span>Next.js</span>
-
-                    </div>
+                    <p class="hero-description">
+                        Desenvolvedor de Software em formação,
+                        construindo aplicações web e transformando
+                        problemas reais em soluções digitais.
+                    </p>
 
                     <div class="hero-actions">
 
-                        <a href="#projetos" class="button button-primary">
+                        <a class="button button-primary" href="#projetos">
                             Ver projetos
                         </a>
 
-                        <a href="https://www.linkedin.com/in/henrique-camargo-6275a6394/" target="_blank"
-                            rel="noopener noreferrer" class="button button-secondary">
+                        <a class="button button-secondary"
+                            href="https://www.linkedin.com/in/henrique-camargo-6275a6394/" target="_blank"
+                            rel="noopener noreferrer">
                             LinkedIn
+                        </a>
+
+                        <a class="button button-secondary" href="https://github.com/henriqueptbd-cell" target="_blank"
+                            rel="noopener noreferrer">
+                            GitHub
                         </a>
 
                     </div>
@@ -104,11 +1050,24 @@
                 </div>
 
 
-                <div class="hero-image reveal">
+                <div class="profile-wrapper reveal">
 
-                    <div class="profile-image-container">
+                    <div class="profile-card">
 
-                        <img src="https://avatars.githubusercontent.com/u/233653222?v=4" alt="Henrique G. Camargo">
+                        <img class="profile-image" src="https://avatars.githubusercontent.com/u/233653222?v=4"
+                            alt="Foto de Henrique G. Camargo">
+
+                        <div class="profile-info">
+
+                            <strong>
+                                Henrique G. Camargo
+                            </strong>
+
+                            <span>
+                                Jacareí — SP
+                            </span>
+
+                        </div>
 
                     </div>
 
@@ -129,12 +1088,13 @@
 
                 <div class="section-header reveal">
 
-                    <p class="section-overline">
+                    <span class="section-label">
                         Sobre mim
-                    </p>
+                    </span>
 
                     <h2>
-                        Uma trajetória diferente na tecnologia.
+                        Da experiência de negócio
+                        para o desenvolvimento de software.
                     </h2>
 
                 </div>
@@ -145,30 +1105,44 @@
                     <div class="about-text reveal">
 
                         <p>
-                            Sou <strong>Desenvolvedor de Software em formação</strong>,
-                            atualmente cursando a Graduação Tecnológica em
-                            Desenvolvimento de Software Multiplataforma na FATEC.
+                            Sou <strong>Desenvolvedor de Software
+                                em formação</strong>, com foco no
+                            ecossistema JavaScript e no desenvolvimento
+                            de aplicações web utilizando React,
+                            Next.js e Node.js.
                         </p>
 
                         <p>
-                            Minha trajetória profissional começou em áreas
-                            administrativas, onde desenvolvi experiência com
-                            atendimento, compras, estoque, processos e gestão.
+                            Tenho mais de uma década de experiência
+                            profissional em diferentes áreas,
+                            incluindo administração, atendimento ao
+                            cliente, compras e controle de estoque.
                         </p>
 
                         <p>
-                            Em 2020, fundei minha própria marcenaria e construí
-                            o negócio desde sua estruturação inicial.
-                            Foi nesse contexto que comecei a perceber como
-                            a tecnologia poderia resolver problemas reais
-                            da operação.
+                            Em 2020, fundei minha própria marcenaria,
+                            construindo o negócio desde sua estruturação
+                            inicial. Essa experiência me proporcionou
+                            contato direto com clientes, fornecedores,
+                            planejamento, processos, gestão e,
+                            principalmente, identificação e resolução
+                            de problemas reais.
                         </p>
 
                         <p>
-                            Hoje utilizo essa experiência para desenvolver
-                            software com uma perspectiva diferente:
-                            <strong>entender primeiro o problema e depois
-                                construir a solução.</strong>
+                            Em 2026, retomei minha formação acadêmica
+                            na área de tecnologia por meio da
+                            <strong>Graduação Tecnológica em
+                                Desenvolvimento de Software
+                                Multiplataforma na FATEC</strong>.
+                        </p>
+
+                        <p>
+                            Hoje direciono essa experiência para o
+                            desenvolvimento de software, criando
+                            projetos próprios e acadêmicos enquanto
+                            construo minha carreira profissional na
+                            área de tecnologia.
                         </p>
 
                     </div>
@@ -176,37 +1150,22 @@
 
                     <div class="about-highlight reveal">
 
-                        <div class="highlight-item">
+                        <strong>
+                            Como penso meus projetos
+                        </strong>
 
-                            <strong>2020</strong>
+                        <p>
+                            Minha experiência profissional me ensinou
+                            a começar pelo problema antes de pensar
+                            na solução.
+                        </p>
 
-                            <span>
-                                Início da HC Marcenaria
-                            </span>
-
-                        </div>
-
-
-                        <div class="highlight-item">
-
-                            <strong>2026</strong>
-
-                            <span>
-                                Início da graduação em tecnologia
-                            </span>
-
-                        </div>
-
-
-                        <div class="highlight-item">
-
-                            <strong>2028</strong>
-
-                            <span>
-                                Previsão de conclusão da graduação
-                            </span>
-
-                        </div>
+                        <p style="margin-top: 14px;">
+                            Procuro entender o contexto, identificar
+                            oportunidades de melhoria e então utilizar
+                            tecnologia para criar soluções úteis,
+                            simples e sustentáveis.
+                        </p>
 
                     </div>
 
@@ -221,87 +1180,148 @@
              TECNOLOGIAS
         ================================================== -->
 
-        <section class="section section-alt">
+        <section id="tecnologias" class="section section-alt">
 
             <div class="container">
 
                 <div class="section-header reveal">
 
-                    <p class="section-overline">
+                    <span class="section-label">
                         Tecnologias
-                    </p>
+                    </span>
 
                     <h2>
-                        Ferramentas que fazem parte da minha evolução.
+                        Ferramentas que fazem parte
+                        da minha jornada.
                     </h2>
+
+                    <p class="section-intro">
+                        Tecnologias que utilizo em projetos
+                        próprios, acadêmicos e nos meus estudos.
+                    </p>
 
                 </div>
 
 
-                <div class="technology-grid reveal">
+                <div class="technology-grid">
 
-                    <div class="technology-card">
+                    <article class="technology-card reveal">
 
-                        <span class="technology-icon">
-                            JS
-                        </span>
+                        <h3>
+                            Frontend
+                        </h3>
 
-                        <h3>JavaScript</h3>
+                        <div class="technology-list">
 
-                        <p>
-                            Linguagem principal dos meus projetos
-                            e base do meu desenvolvimento web.
-                        </p>
+                            <span class="technology-tag">
+                                JavaScript
+                            </span>
 
-                    </div>
+                            <span class="technology-tag">
+                                TypeScript
+                            </span>
 
+                            <span class="technology-tag">
+                                React
+                            </span>
 
-                    <div class="technology-card">
+                            <span class="technology-tag">
+                                Next.js
+                            </span>
 
-                        <span class="technology-icon">
-                            RE
-                        </span>
+                            <span class="technology-tag">
+                                HTML5
+                            </span>
 
-                        <h3>React</h3>
+                            <span class="technology-tag">
+                                CSS3
+                            </span>
 
-                        <p>
-                            Desenvolvimento de interfaces,
-                            componentes e aplicações web.
-                        </p>
+                            <span class="technology-tag">
+                                Vite
+                            </span>
 
-                    </div>
+                        </div>
 
-
-                    <div class="technology-card">
-
-                        <span class="technology-icon">
-                            ND
-                        </span>
-
-                        <h3>Node.js</h3>
-
-                        <p>
-                            Desenvolvimento backend,
-                            APIs REST e integração com sistemas.
-                        </p>
-
-                    </div>
+                    </article>
 
 
-                    <div class="technology-card">
+                    <article class="technology-card reveal">
 
-                        <span class="technology-icon">
-                            DB
-                        </span>
+                        <h3>
+                            Backend
+                        </h3>
 
-                        <h3>PostgreSQL</h3>
+                        <div class="technology-list">
 
-                        <p>
-                            Estruturação e manipulação de
-                            bancos de dados relacionais.
-                        </p>
+                            <span class="technology-tag">
+                                Node.js
+                            </span>
 
-                    </div>
+                            <span class="technology-tag">
+                                Express
+                            </span>
+
+                            <span class="technology-tag">
+                                APIs REST
+                            </span>
+
+                            <span class="technology-tag">
+                                JWT
+                            </span>
+
+                            <span class="technology-tag">
+                                Middleware
+                            </span>
+
+                            <span class="technology-tag">
+                                JSON
+                            </span>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="technology-card reveal">
+
+                        <h3>
+                            Dados & Ferramentas
+                        </h3>
+
+                        <div class="technology-list">
+
+                            <span class="technology-tag">
+                                PostgreSQL
+                            </span>
+
+                            <span class="technology-tag">
+                                Firebase
+                            </span>
+
+                            <span class="technology-tag">
+                                Git
+                            </span>
+
+                            <span class="technology-tag">
+                                GitHub
+                            </span>
+
+                            <span class="technology-tag">
+                                Docker
+                            </span>
+
+                            <span class="technology-tag">
+                                VS Code
+                            </span>
+
+                            <span class="technology-tag">
+                                Vercel
+                            </span>
+
+                        </div>
+
+                    </article>
 
                 </div>
 
@@ -320,61 +1340,59 @@
 
                 <div class="section-header reveal">
 
-                    <p class="section-overline">
+                    <span class="section-label">
                         Projetos
-                    </p>
+                    </span>
 
                     <h2>
-                        Projetos que representam minha evolução.
+                        Software aplicado a problemas reais.
                     </h2>
 
-                    <p>
-                        Projetos próprios e acadêmicos desenvolvidos
-                        durante minha formação.
+                    <p class="section-intro">
+                        Alguns dos projetos que representam minha
+                        evolução acadêmica e prática como desenvolvedor.
                     </p>
 
                 </div>
 
 
-                <div class="projects-grid">
+                <div class="projects">
 
-
-                    <!-- SYS CONFEC -->
+                    <!-- SysConfec -->
 
                     <article class="project-card reveal">
 
-                        <div class="project-number">
-                            01
+                        <span class="project-type">
+                            Projeto pessoal · Full-Stack
+                        </span>
+
+                        <h3>
+                            SysConfec
+                        </h3>
+
+                        <p>
+                            Sistema web de gestão para confecções
+                            de uniformes e artigos esportivos,
+                            centralizando clientes, pedidos,
+                            produção e acompanhamento.
+                        </p>
+
+                        <div class="project-stack">
+
+                            <span>React</span>
+                            <span>Vite</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>PostgreSQL</span>
+                            <span>JWT</span>
+
                         </div>
 
-                        <div class="project-content">
-
-                            <span class="project-type">
-                                Projeto próprio
-                            </span>
-
-                            <h3>
-                                SysConfec
-                            </h3>
-
-                            <p>
-                                Sistema web de gestão para confecções,
-                                desenvolvido para centralizar clientes,
-                                pedidos, produção e acompanhamento.
-                            </p>
-
-                            <div class="project-stack">
-
-                                <span>React</span>
-                                <span>Node.js</span>
-                                <span>PostgreSQL</span>
-                                <span>JWT</span>
-
-                            </div>
+                        <div class="project-links">
 
                             <a href="https://github.com/henriqueptbd-cell/SysConfec" target="_blank"
                                 rel="noopener noreferrer">
-                                Ver projeto →
+                                GitHub →
                             </a>
 
                         </div>
@@ -382,42 +1400,41 @@
                     </article>
 
 
-                    <!-- SCRUM FLOW -->
+                    <!-- ScrumFlow -->
 
                     <article class="project-card reveal">
 
-                        <div class="project-number">
-                            02
+                        <span class="project-type">
+                            Projeto acadêmico · FATEC
+                        </span>
+
+                        <h3>
+                            ScrumFlow
+                        </h3>
+
+                        <p>
+                            Portal de certificação em metodologias
+                            ágeis desenvolvido em equipe durante
+                            o primeiro semestre da graduação na FATEC.
+                        </p>
+
+                        <div class="project-stack">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>PostgreSQL</span>
+                            <span>JWT</span>
+
                         </div>
 
-                        <div class="project-content">
-
-                            <span class="project-type">
-                                Projeto acadêmico · 1DSM
-                            </span>
-
-                            <h3>
-                                ScrumFlow
-                            </h3>
-
-                            <p>
-                                Portal de certificação em metodologias
-                                ágeis desenvolvido em equipe durante
-                                a graduação na FATEC.
-                            </p>
-
-                            <div class="project-stack">
-
-                                <span>JavaScript</span>
-                                <span>Node.js</span>
-                                <span>Express</span>
-                                <span>PostgreSQL</span>
-
-                            </div>
+                        <div class="project-links">
 
                             <a href="https://github.com/DEVassos/scrum-flow-abp" target="_blank"
                                 rel="noopener noreferrer">
-                                Ver projeto →
+                                GitHub →
                             </a>
 
                         </div>
@@ -425,42 +1442,40 @@
                     </article>
 
 
-                    <!-- SIMULADOR -->
+                    <!-- Simulador -->
 
                     <article class="project-card reveal">
 
-                        <div class="project-number">
-                            03
+                        <span class="project-type">
+                            Projeto pessoal
+                        </span>
+
+                        <h3>
+                            Plataforma de Simulados
+                        </h3>
+
+                        <p>
+                            Aplicação web para realização de
+                            simulados, com questões organizadas
+                            por disciplinas, correção automática
+                            e acompanhamento de desempenho.
+                        </p>
+
+                        <div class="project-stack">
+
+                            <span>JavaScript</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>Node.js</span>
+                            <span>JSON</span>
+
                         </div>
 
-                        <div class="project-content">
-
-                            <span class="project-type">
-                                Projeto próprio
-                            </span>
-
-                            <h3>
-                                Simulador de Provas
-                            </h3>
-
-                            <p>
-                                Plataforma web para realização de
-                                simulados com questões organizadas
-                                por disciplinas e correção automática.
-                            </p>
-
-                            <div class="project-stack">
-
-                                <span>JavaScript</span>
-                                <span>HTML5</span>
-                                <span>CSS3</span>
-                                <span>Node.js</span>
-
-                            </div>
+                        <div class="project-links">
 
                             <a href="https://github.com/henriqueptbd-cell/Simulador-Provas" target="_blank"
                                 rel="noopener noreferrer">
-                                Ver projeto →
+                                GitHub →
                             </a>
 
                         </div>
@@ -468,41 +1483,43 @@
                     </article>
 
 
-                    <!-- CONVERTER -->
+                    <!-- Converter -->
 
                     <article class="project-card reveal">
 
-                        <div class="project-number">
-                            04
+                        <span class="project-type">
+                            Projeto pessoal · Automação
+                        </span>
+
+                        <h3>
+                            Converter SCT
+                        </h3>
+
+                        <p>
+                            Ferramenta criada a partir de uma
+                            necessidade real da marcenaria para
+                            converter listas exportadas pelo
+                            Promob para o formato utilizado pelo
+                            SketchCut.
+                        </p>
+
+                        <div class="project-stack">
+
+                            <span>HTML5</span>
+                            <span>CSS3</span>
+                            <span>JavaScript</span>
+
                         </div>
 
-                        <div class="project-content">
-
-                            <span class="project-type">
-                                Projeto próprio
-                            </span>
-
-                            <h3>
-                                Converter SCT
-                            </h3>
-
-                            <p>
-                                Ferramenta criada a partir de uma
-                                necessidade real da marcenaria para
-                                automatizar a preparação de planos de corte.
-                            </p>
-
-                            <div class="project-stack">
-
-                                <span>JavaScript</span>
-                                <span>HTML5</span>
-                                <span>CSS3</span>
-
-                            </div>
+                        <div class="project-links">
 
                             <a href="https://github.com/henriqueptbd-cell/converter-sct" target="_blank"
                                 rel="noopener noreferrer">
-                                Ver projeto →
+                                GitHub →
+                            </a>
+
+                            <a href="https://converter-sct.vercel.app/" target="_blank" rel="noopener noreferrer">
+                                Aplicação →
                             </a>
 
                         </div>
@@ -526,99 +1543,100 @@
 
                 <div class="section-header reveal">
 
-                    <p class="section-overline">
+                    <span class="section-label">
                         Experiência
-                    </p>
+                    </span>
 
                     <h2>
-                        Experiência profissional além do código.
+                        Experiência profissional
+                        que trouxe para a tecnologia.
                     </h2>
 
                 </div>
 
 
-                <div class="experience-content reveal">
+                <div class="timeline">
 
-                    <div class="experience-item">
+                    <!-- HC -->
 
-                        <div class="experience-date">
-                            2020 — atual
+                    <article class="timeline-item reveal">
+
+                        <div class="timeline-date">
+                            2020 — Atual
                         </div>
 
-                        <div>
+                        <h3>
+                            HC Marcenaria
+                        </h3>
 
-                            <h3>
-                                HC Marcenaria
-                            </h3>
-
-                            <span>
-                                Fundador e Administrador
-                            </span>
-
-                            <p>
-                                Criação e gestão do negócio desde sua
-                                estruturação inicial, envolvendo
-                                atendimento, planejamento, compras,
-                                fornecedores, produção e processos.
-                            </p>
-
+                        <div class="timeline-role">
+                            Fundador e Administrador · Jacareí — SP
                         </div>
 
-                    </div>
+                        <p>
+                            Criação e desenvolvimento do negócio
+                            desde sua estruturação inicial,
+                            atuando em fabricação, atendimento,
+                            planejamento, compras, fornecedores,
+                            processos administrativos e gestão.
+                            Também desenvolvi ferramentas digitais
+                            para solucionar necessidades reais
+                            da operação.
+                        </p>
+
+                    </article>
 
 
-                    <div class="experience-item">
+                    <!-- Auto Nova -->
 
-                        <div class="experience-date">
+                    <article class="timeline-item reveal">
+
+                        <div class="timeline-date">
                             2019 — 2020
                         </div>
 
-                        <div>
+                        <h3>
+                            Auto Nova
+                        </h3>
 
-                            <h3>
-                                Auto Nova
-                            </h3>
-
-                            <span>
-                                Área Administrativa
-                            </span>
-
-                            <p>
-                                Atendimento ao cliente, compras,
-                                relacionamento com fornecedores,
-                                estoque e organização administrativa.
-                            </p>
-
+                        <div class="timeline-role">
+                            Área Administrativa · Jacareí — SP
                         </div>
 
-                    </div>
+                        <p>
+                            Atendimento a clientes, acompanhamento
+                            de serviços, compras, fornecedores,
+                            controle de estoque e organização
+                            dos processos administrativos.
+                        </p>
+
+                    </article>
 
 
-                    <div class="experience-item">
+                    <!-- Performance -->
 
-                        <div class="experience-date">
+                    <article class="timeline-item reveal">
+
+                        <div class="timeline-date">
                             2014 — 2019
                         </div>
 
-                        <div>
+                        <h3>
+                            Performance Car
+                        </h3>
 
-                            <h3>
-                                Performance Car
-                            </h3>
-
-                            <span>
-                                Área Administrativa
-                            </span>
-
-                            <p>
-                                Atendimento, compras, controle de estoque,
-                                relacionamento com fornecedores e
-                                acompanhamento das demandas administrativas.
-                            </p>
-
+                        <div class="timeline-role">
+                            Área Administrativa · Jacareí — SP
                         </div>
 
-                    </div>
+                        <p>
+                            Atendimento ao cliente, organização
+                            administrativa, compras, cotação de
+                            peças, controle de estoque e
+                            acompanhamento de reposições.
+                        </p>
+
+                    </article>
 
                 </div>
 
@@ -637,12 +1655,12 @@
 
                 <div class="section-header reveal">
 
-                    <p class="section-overline">
+                    <span class="section-label">
                         Formação
-                    </p>
+                    </span>
 
                     <h2>
-                        Construindo minha base em tecnologia.
+                        Formação acadêmica
                     </h2>
 
                 </div>
@@ -650,24 +1668,24 @@
 
                 <div class="education-card reveal">
 
-                    <span class="education-year">
-                        2026 — 2028
-                    </span>
-
                     <h3>
                         Desenvolvimento de Software Multiplataforma
                     </h3>
 
+                    <div class="institution">
+                        FATEC — Faculdade de Tecnologia
+                        do Estado de São Paulo
+                    </div>
+
                     <p>
-                        FATEC — Faculdade de Tecnologia do Estado de São Paulo
+                        Graduação Tecnológica · 2026 — 2028
                     </p>
 
-                    <span>
-                        Graduação Tecnológica · Em andamento
-                    </span>
-
-                    <p class="education-note">
-                        Conclusão prevista para dezembro de 2028.
+                    <p>
+                        Em andamento · Conclusão prevista para
+                        <strong>
+                            dezembro de 2028
+                        </strong>.
                     </p>
 
                 </div>
@@ -681,35 +1699,37 @@
              CONTATO
         ================================================== -->
 
-        <section id="contato" class="section contact-section">
+        <section id="contato" class="section section-alt">
 
             <div class="container">
 
-                <div class="contact-content reveal">
+                <div class="contact reveal">
 
-                    <p class="section-overline">
+                    <span class="section-label">
                         Contato
-                    </p>
+                    </span>
 
                     <h2>
                         Vamos conversar?
                     </h2>
 
                     <p>
-                        Estou em busca de uma oportunidade para
-                        ingressar profissionalmente na área de
-                        desenvolvimento de software.
+                        Estou buscando minha primeira oportunidade
+                        profissional na área de desenvolvimento
+                        de software e aberto a novos projetos,
+                        experiências e conexões profissionais.
                     </p>
 
-                    <div class="contact-actions">
 
-                        <a href="https://www.linkedin.com/in/henrique-camargo-6275a6394/" target="_blank"
-                            rel="noopener noreferrer" class="button button-primary">
+                    <div class="contact-links">
+
+                        <a class="button button-primary" href="https://www.linkedin.com/in/henrique-camargo-6275a6394/"
+                            target="_blank" rel="noopener noreferrer">
                             LinkedIn
                         </a>
 
-                        <a href="https://github.com/henriqueptbd-cell" target="_blank" rel="noopener noreferrer"
-                            class="button button-secondary">
+                        <a class="button button-secondary" href="https://github.com/henriqueptbd-cell" target="_blank"
+                            rel="noopener noreferrer">
                             GitHub
                         </a>
 
@@ -728,17 +1748,14 @@
          FOOTER
     ====================================================== -->
 
-    <footer class="footer">
+    <footer>
 
-        <div class="container footer-container">
-
-            <p>
-                Henrique G. Camargo
-            </p>
+        <div class="container">
 
             <p>
                 © <span id="current-year"></span>
-                · Desenvolvedor de Software em formação
+                Henrique G. Camargo.
+                Desenvolvedor de Software em formação.
             </p>
 
         </div>
@@ -746,7 +1763,210 @@
     </footer>
 
 
-    <script src="js/script.js"></script>
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script>
+
+        /* =====================================================
+           HEADER AO ROLAR
+        ===================================================== */
+
+        const header =
+            document.querySelector(".header");
+
+        function updateHeader() {
+
+            if (!header) {
+                return;
+            }
+
+            if (window.scrollY > 30) {
+
+                header.classList.add(
+                    "header-scrolled"
+                );
+
+            } else {
+
+                header.classList.remove(
+                    "header-scrolled"
+                );
+
+            }
+
+        }
+
+        window.addEventListener(
+            "scroll",
+            updateHeader
+        );
+
+        updateHeader();
+
+
+        /* =====================================================
+           MENU MOBILE
+        ===================================================== */
+
+        const menuButton =
+            document.querySelector(".menu-button");
+
+        const navigation =
+            document.querySelector(".navigation");
+
+
+        if (menuButton && navigation) {
+
+            menuButton.addEventListener(
+                "click",
+                () => {
+
+                    navigation.classList.toggle(
+                        "navigation-open"
+                    );
+
+                    const isOpen =
+                        navigation.classList.contains(
+                            "navigation-open"
+                        );
+
+                    menuButton.setAttribute(
+                        "aria-expanded",
+                        isOpen
+                    );
+
+                    menuButton.setAttribute(
+                        "aria-label",
+                        isOpen
+                            ? "Fechar menu"
+                            : "Abrir menu"
+                    );
+
+                }
+            );
+
+
+            const navigationLinks =
+                navigation.querySelectorAll("a");
+
+
+            navigationLinks.forEach(
+                link => {
+
+                    link.addEventListener(
+                        "click",
+                        () => {
+
+                            navigation.classList.remove(
+                                "navigation-open"
+                            );
+
+                            menuButton.setAttribute(
+                                "aria-expanded",
+                                "false"
+                            );
+
+                            menuButton.setAttribute(
+                                "aria-label",
+                                "Abrir menu"
+                            );
+
+                        }
+                    );
+
+                }
+            );
+
+        }
+
+
+        /* =====================================================
+           ANIMAÇÕES
+        ===================================================== */
+
+        const revealElements =
+            document.querySelectorAll(".reveal");
+
+
+        if (
+            revealElements.length > 0 &&
+            "IntersectionObserver" in window
+        ) {
+
+            const observer =
+                new IntersectionObserver(
+                    entries => {
+
+                        entries.forEach(
+                            entry => {
+
+                                if (
+                                    entry.isIntersecting
+                                ) {
+
+                                    entry.target.classList.add(
+                                        "reveal-visible"
+                                    );
+
+                                    observer.unobserve(
+                                        entry.target
+                                    );
+
+                                }
+
+                            }
+                        );
+
+                    },
+                    {
+                        threshold: 0.1
+                    }
+                );
+
+
+            revealElements.forEach(
+                element => {
+
+                    observer.observe(element);
+
+                }
+            );
+
+        } else {
+
+            revealElements.forEach(
+                element => {
+
+                    element.classList.add(
+                        "reveal-visible"
+                    );
+
+                }
+            );
+
+        }
+
+
+        /* =====================================================
+           ANO AUTOMÁTICO
+        ===================================================== */
+
+        const currentYear =
+            document.querySelector(
+                "#current-year"
+            );
+
+
+        if (currentYear) {
+
+            currentYear.textContent =
+                new Date().getFullYear();
+
+        }
+
+    </script>
 
 </body>
 

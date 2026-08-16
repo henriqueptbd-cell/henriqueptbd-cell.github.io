@@ -6,7 +6,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="Portfólio de Henrique G. Camargo, Desenvolvedor de Software.">
+    <meta name="description" content="Portfólio de Henrique G. Camargo, Desenvolvedor de Software em formação.">
 
     <title>Henrique G. Camargo | Desenvolvedor de Software</title>
 
@@ -16,38 +16,34 @@
 <body>
 
     <!-- =====================================================
-         NAVEGAÇÃO
-         ===================================================== -->
+         HEADER
+    ====================================================== -->
 
     <header class="header">
 
-        <div class="container nav">
+        <div class="container header-container">
 
             <a href="#inicio" class="logo">
-                HGC
+                Henrique<span>.</span>
             </a>
 
-            <nav>
+            <button id="menu-button" class="menu-button" type="button" aria-label="Abrir menu" aria-expanded="false">
+                ☰
+            </button>
 
-                <a href="#sobre">
-                    Sobre
-                </a>
+            <nav id="navigation" class="navigation">
 
-                <a href="#trajetoria">
-                    Trajetória
-                </a>
+                <a href="#inicio">Início</a>
 
-                <a href="#tecnologias">
-                    Tecnologias
-                </a>
+                <a href="#sobre">Sobre</a>
 
-                <a href="#projetos">
-                    Projetos
-                </a>
+                <a href="#projetos">Projetos</a>
 
-                <a href="#formacao">
-                    Formação
-                </a>
+                <a href="#experiencia">Experiência</a>
+
+                <a href="#formacao">Formação</a>
+
+                <a href="#contato">Contato</a>
 
             </nav>
 
@@ -60,31 +56,37 @@
 
         <!-- =================================================
              HERO
-             ================================================= -->
+        ================================================== -->
 
         <section id="inicio" class="hero">
 
-            <div class="container hero-content">
+            <div class="container hero-container">
 
-                <div class="hero-text">
+                <div class="hero-content reveal">
 
-                    <p class="eyebrow">
-                        Desenvolvedor de Software
+                    <p class="hero-overline">
+                        Desenvolvedor de Software em formação
                     </p>
 
                     <h1>
-                        Henrique G. Camargo
+                        Olá, eu sou
+                        <span>Henrique G. Camargo</span>
                     </h1>
 
-                    <h2>
-                        JavaScript · React · Node.js
-                    </h2>
-
                     <p class="hero-description">
-                        Desenvolvedor de Software em formação,
-                        construindo aplicações web e transformando
-                        problemas reais em soluções de software.
+                        Desenvolvedor focado no ecossistema JavaScript,
+                        criando aplicações web e transformando problemas
+                        reais em soluções digitais.
                     </p>
+
+                    <div class="hero-technologies">
+
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>Next.js</span>
+
+                    </div>
 
                     <div class="hero-actions">
 
@@ -92,15 +94,21 @@
                             Ver projetos
                         </a>
 
-                        <a href="https://github.com/henriqueptbd-cell" target="_blank" rel="noopener noreferrer"
-                            class="button button-secondary">
-                            GitHub
-                        </a>
-
                         <a href="https://www.linkedin.com/in/henrique-camargo-6275a6394/" target="_blank"
                             rel="noopener noreferrer" class="button button-secondary">
                             LinkedIn
                         </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="hero-image reveal">
+
+                    <div class="profile-image-container">
+
+                        <img src="https://avatars.githubusercontent.com/u/233653222?v=4" alt="Henrique G. Camargo">
 
                     </div>
 
@@ -113,20 +121,20 @@
 
         <!-- =================================================
              SOBRE
-             ================================================= -->
+        ================================================== -->
 
         <section id="sobre" class="section">
 
             <div class="container">
 
-                <div class="section-heading">
+                <div class="section-header reveal">
 
-                    <p class="eyebrow">
+                    <p class="section-overline">
                         Sobre mim
                     </p>
 
                     <h2>
-                        Uma trajetória construída através de desafios reais.
+                        Uma trajetória diferente na tecnologia.
                     </h2>
 
                 </div>
@@ -134,192 +142,73 @@
 
                 <div class="about-grid">
 
-                    <div class="about-photo">
-                        <img src="https://avatars.githubusercontent.com/u/233653222?v=4" alt="Henrique G. Camargo">
-                    </div>
-
-
-                    <div class="about-content">
+                    <div class="about-text reveal">
 
                         <p>
-                            Sou Desenvolvedor de Software em formação,
-                            com foco no ecossistema JavaScript e no
-                            desenvolvimento de aplicações web.
+                            Sou <strong>Desenvolvedor de Software em formação</strong>,
+                            atualmente cursando a Graduação Tecnológica em
+                            Desenvolvimento de Software Multiplataforma na FATEC.
                         </p>
 
                         <p>
-                            Minha trajetória profissional começou muito
-                            antes da tecnologia. Atuei por mais de uma
-                            década no mercado de trabalho, principalmente
-                            nas áreas administrativa, atendimento ao cliente,
-                            compras e controle de estoque.
+                            Minha trajetória profissional começou em áreas
+                            administrativas, onde desenvolvi experiência com
+                            atendimento, compras, estoque, processos e gestão.
                         </p>
 
                         <p>
-                            Em 2020, fundei minha própria marcenaria,
-                            construindo o negócio desde sua estruturação
-                            inicial. Essa experiência me proporcionou
-                            contato direto com gestão, processos,
-                            resolução de problemas e necessidades reais
-                            de clientes.
+                            Em 2020, fundei minha própria marcenaria e construí
+                            o negócio desde sua estruturação inicial.
+                            Foi nesse contexto que comecei a perceber como
+                            a tecnologia poderia resolver problemas reais
+                            da operação.
                         </p>
 
                         <p>
-                            Em 2026, retomei minha formação acadêmica na
-                            área de tecnologia através da graduação
-                            tecnológica em Desenvolvimento de Software
-                            Multiplataforma na FATEC Jacareí.
-                        </p>
-
-                        <p>
-                            Atualmente direciono minha experiência
-                            profissional para o desenvolvimento de software,
-                            criando projetos próprios e acadêmicos enquanto
-                            aprofundo meus conhecimentos em desenvolvimento
-                            web, backend e engenharia de software.
+                            Hoje utilizo essa experiência para desenvolver
+                            software com uma perspectiva diferente:
+                            <strong>entender primeiro o problema e depois
+                                construir a solução.</strong>
                         </p>
 
                     </div>
 
-                </div>
 
-            </div>
+                    <div class="about-highlight reveal">
 
-        </section>
+                        <div class="highlight-item">
 
+                            <strong>2020</strong>
 
-        <!-- =================================================
-             TRAJETÓRIA
-             ================================================= -->
-
-        <section id="trajetoria" class="section section-alt">
-
-            <div class="container">
-
-                <div class="section-heading">
-
-                    <p class="eyebrow">
-                        Minha trajetória
-                    </p>
-
-                    <h2>
-                        Experiência que trouxe diferentes perspectivas
-                        para a tecnologia.
-                    </h2>
-
-                </div>
-
-
-                <div class="timeline">
-
-                    <article class="timeline-item">
-
-                        <span class="timeline-year">
-                            2012
-                        </span>
-
-                        <div>
-
-                            <h3>
-                                ETEC Cônego José Bento
-                            </h3>
-
-                            <p>
-                                Conclusão do Ensino Médio.
-                            </p>
+                            <span>
+                                Início da HC Marcenaria
+                            </span>
 
                         </div>
 
-                    </article>
 
+                        <div class="highlight-item">
 
-                    <article class="timeline-item">
+                            <strong>2026</strong>
 
-                        <span class="timeline-year">
-                            2014 – 2019
-                        </span>
-
-                        <div>
-
-                            <h3>
-                                Performance Car
-                            </h3>
-
-                            <p>
-                                Atuação administrativa, atendimento
-                                ao cliente, compras e controle de estoque.
-                            </p>
+                            <span>
+                                Início da graduação em tecnologia
+                            </span>
 
                         </div>
 
-                    </article>
 
+                        <div class="highlight-item">
 
-                    <article class="timeline-item">
+                            <strong>2028</strong>
 
-                        <span class="timeline-year">
-                            2019 – 2020
-                        </span>
-
-                        <div>
-
-                            <h3>
-                                Auto Nova
-                            </h3>
-
-                            <p>
-                                Atuação administrativa, compras,
-                                fornecedores e organização de estoque.
-                            </p>
+                            <span>
+                                Previsão de conclusão da graduação
+                            </span>
 
                         </div>
 
-                    </article>
-
-
-                    <article class="timeline-item">
-
-                        <span class="timeline-year">
-                            2020 – atual
-                        </span>
-
-                        <div>
-
-                            <h3>
-                                HC Marcenaria
-                            </h3>
-
-                            <p>
-                                Fundação e administração do negócio,
-                                gestão de projetos, clientes,
-                                fornecedores e processos operacionais.
-                            </p>
-
-                        </div>
-
-                    </article>
-
-
-                    <article class="timeline-item timeline-current">
-
-                        <span class="timeline-year">
-                            2026 →
-                        </span>
-
-                        <div>
-
-                            <h3>
-                                FATEC Jacareí
-                            </h3>
-
-                            <p>
-                                Graduação Tecnológica em Desenvolvimento
-                                de Software Multiplataforma.
-                            </p>
-
-                        </div>
-
-                    </article>
+                    </div>
 
                 </div>
 
@@ -330,114 +219,89 @@
 
         <!-- =================================================
              TECNOLOGIAS
-             ================================================= -->
+        ================================================== -->
 
-        <section id="tecnologias" class="section">
+        <section class="section section-alt">
 
             <div class="container">
 
-                <div class="section-heading">
+                <div class="section-header reveal">
 
-                    <p class="eyebrow">
+                    <p class="section-overline">
                         Tecnologias
                     </p>
 
                     <h2>
-                        Ferramentas e conhecimentos em desenvolvimento.
+                        Ferramentas que fazem parte da minha evolução.
                     </h2>
 
                 </div>
 
 
-                <div class="technology-grid">
+                <div class="technology-grid reveal">
 
-                    <article class="technology-card">
+                    <div class="technology-card">
 
-                        <h3>
-                            Frontend
-                        </h3>
+                        <span class="technology-icon">
+                            JS
+                        </span>
 
-                        <div class="tags">
+                        <h3>JavaScript</h3>
 
-                            <span>JavaScript</span>
-                            <span>React</span>
-                            <span>Next.js</span>
-                            <span>HTML5</span>
-                            <span>CSS3</span>
+                        <p>
+                            Linguagem principal dos meus projetos
+                            e base do meu desenvolvimento web.
+                        </p>
 
-                        </div>
-
-                    </article>
+                    </div>
 
 
-                    <article class="technology-card">
+                    <div class="technology-card">
 
-                        <h3>
-                            Backend
-                        </h3>
+                        <span class="technology-icon">
+                            RE
+                        </span>
 
-                        <div class="tags">
+                        <h3>React</h3>
 
-                            <span>Node.js</span>
-                            <span>Express</span>
-                            <span>APIs REST</span>
-                            <span>JSON</span>
+                        <p>
+                            Desenvolvimento de interfaces,
+                            componentes e aplicações web.
+                        </p>
 
-                        </div>
-
-                    </article>
+                    </div>
 
 
-                    <article class="technology-card">
+                    <div class="technology-card">
 
-                        <h3>
-                            Banco de Dados
-                        </h3>
+                        <span class="technology-icon">
+                            ND
+                        </span>
 
-                        <div class="tags">
+                        <h3>Node.js</h3>
 
-                            <span>PostgreSQL</span>
-                            <span>Firebase</span>
+                        <p>
+                            Desenvolvimento backend,
+                            APIs REST e integração com sistemas.
+                        </p>
 
-                        </div>
-
-                    </article>
-
-
-                    <article class="technology-card">
-
-                        <h3>
-                            Ferramentas
-                        </h3>
-
-                        <div class="tags">
-
-                            <span>Git</span>
-                            <span>GitHub</span>
-                            <span>VS Code</span>
-                            <span>Docker</span>
-
-                        </div>
-
-                    </article>
+                    </div>
 
 
-                    <article class="technology-card">
+                    <div class="technology-card">
 
-                        <h3>
-                            Outros conhecimentos
-                        </h3>
+                        <span class="technology-icon">
+                            DB
+                        </span>
 
-                        <div class="tags">
+                        <h3>PostgreSQL</h3>
 
-                            <span>Python</span>
-                            <span>Cloud</span>
-                            <span>Cybersecurity</span>
-                            <span>Metodologias Ágeis</span>
+                        <p>
+                            Estruturação e manipulação de
+                            bancos de dados relacionais.
+                        </p>
 
-                        </div>
-
-                    </article>
+                    </div>
 
                 </div>
 
@@ -448,21 +312,26 @@
 
         <!-- =================================================
              PROJETOS
-             ================================================= -->
+        ================================================== -->
 
-        <section id="projetos" class="section section-dark">
+        <section id="projetos" class="section">
 
             <div class="container">
 
-                <div class="section-heading">
+                <div class="section-header reveal">
 
-                    <p class="eyebrow">
+                    <p class="section-overline">
                         Projetos
                     </p>
 
                     <h2>
-                        Alguns dos projetos que fazem parte da minha evolução.
+                        Projetos que representam minha evolução.
                     </h2>
+
+                    <p>
+                        Projetos próprios e acadêmicos desenvolvidos
+                        durante minha formação.
+                    </p>
 
                 </div>
 
@@ -470,14 +339,18 @@
                 <div class="projects-grid">
 
 
-                    <!-- SysConfec -->
+                    <!-- SYS CONFEC -->
 
-                    <article class="project-card">
+                    <article class="project-card reveal">
 
-                        <div class="project-card-content">
+                        <div class="project-number">
+                            01
+                        </div>
+
+                        <div class="project-content">
 
                             <span class="project-type">
-                                Projeto pessoal
+                                Projeto próprio
                             </span>
 
                             <h3>
@@ -485,70 +358,23 @@
                             </h3>
 
                             <p>
-                                Sistema ERP desenvolvido para gestão
-                                de pedidos, clientes, produção e
-                                operações de uma empresa de confecção.
+                                Sistema web de gestão para confecções,
+                                desenvolvido para centralizar clientes,
+                                pedidos, produção e acompanhamento.
                             </p>
 
-                            <div class="tags">
+                            <div class="project-stack">
 
                                 <span>React</span>
                                 <span>Node.js</span>
                                 <span>PostgreSQL</span>
+                                <span>JWT</span>
 
                             </div>
 
-                        </div>
-
-                        <a href="https://github.com/henriqueptbd-cell/SysConfec" target="_blank"
-                            rel="noopener noreferrer" class="project-link">
-                            Ver projeto →
-                        </a>
-
-                    </article>
-
-
-                    <!-- Converter SCT -->
-
-                    <article class="project-card">
-
-                        <div class="project-card-content">
-
-                            <span class="project-type">
-                                Projeto pessoal
-                            </span>
-
-                            <h3>
-                                Converter SCT
-                            </h3>
-
-                            <p>
-                                Ferramenta criada a partir de uma
-                                necessidade real da minha marcenaria
-                                para automatizar a conversão de listas
-                                de peças do Promob para o SketchCut.
-                            </p>
-
-                            <div class="tags">
-
-                                <span>JavaScript</span>
-                                <span>HTML5</span>
-                                <span>CSS3</span>
-
-                            </div>
-
-                        </div>
-
-                        <div class="project-actions">
-
-                            <a href="https://github.com/henriqueptbd-cell/converter-sct" target="_blank"
-                                rel="noopener noreferrer" class="project-link">
-                                GitHub →
-                            </a>
-
-                            <a href="https://converter-sct.vercel.app/" target="_blank" rel="noopener noreferrer"
-                                class="project-link">
-                                Aplicação →
+                            <a href="https://github.com/henriqueptbd-cell/SysConfec" target="_blank"
+                                rel="noopener noreferrer">
+                                Ver projeto →
                             </a>
 
                         </div>
@@ -556,14 +382,18 @@
                     </article>
 
 
-                    <!-- ScrumFlow -->
+                    <!-- SCRUM FLOW -->
 
-                    <article class="project-card">
+                    <article class="project-card reveal">
 
-                        <div class="project-card-content">
+                        <div class="project-number">
+                            02
+                        </div>
+
+                        <div class="project-content">
 
                             <span class="project-type">
-                                Projeto acadêmico · 1DSM · 2026
+                                Projeto acadêmico · 1DSM
                             </span>
 
                             <h3>
@@ -573,35 +403,40 @@
                             <p>
                                 Portal de certificação em metodologias
                                 ágeis desenvolvido em equipe durante
-                                a graduação na FATEC Jacareí.
+                                a graduação na FATEC.
                             </p>
 
-                            <div class="tags">
+                            <div class="project-stack">
 
                                 <span>JavaScript</span>
                                 <span>Node.js</span>
+                                <span>Express</span>
                                 <span>PostgreSQL</span>
 
                             </div>
 
-                        </div>
+                            <a href="https://github.com/DEVassos/scrum-flow-abp" target="_blank"
+                                rel="noopener noreferrer">
+                                Ver projeto →
+                            </a>
 
-                        <a href="https://github.com/DEVassos/scrum-flow-abp" target="_blank" rel="noopener noreferrer"
-                            class="project-link">
-                            Ver projeto →
-                        </a>
+                        </div>
 
                     </article>
 
 
-                    <!-- Simulador -->
+                    <!-- SIMULADOR -->
 
-                    <article class="project-card">
+                    <article class="project-card reveal">
 
-                        <div class="project-card-content">
+                        <div class="project-number">
+                            03
+                        </div>
+
+                        <div class="project-content">
 
                             <span class="project-type">
-                                Projeto pessoal
+                                Projeto próprio
                             </span>
 
                             <h3>
@@ -609,13 +444,55 @@
                             </h3>
 
                             <p>
-                                Aplicação web para realização de
-                                simulados, com questões organizadas,
-                                correção automática e acompanhamento
-                                de desempenho.
+                                Plataforma web para realização de
+                                simulados com questões organizadas
+                                por disciplinas e correção automática.
                             </p>
 
-                            <div class="tags">
+                            <div class="project-stack">
+
+                                <span>JavaScript</span>
+                                <span>HTML5</span>
+                                <span>CSS3</span>
+                                <span>Node.js</span>
+
+                            </div>
+
+                            <a href="https://github.com/henriqueptbd-cell/Simulador-Provas" target="_blank"
+                                rel="noopener noreferrer">
+                                Ver projeto →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- CONVERTER -->
+
+                    <article class="project-card reveal">
+
+                        <div class="project-number">
+                            04
+                        </div>
+
+                        <div class="project-content">
+
+                            <span class="project-type">
+                                Projeto próprio
+                            </span>
+
+                            <h3>
+                                Converter SCT
+                            </h3>
+
+                            <p>
+                                Ferramenta criada a partir de uma
+                                necessidade real da marcenaria para
+                                automatizar a preparação de planos de corte.
+                            </p>
+
+                            <div class="project-stack">
 
                                 <span>JavaScript</span>
                                 <span>HTML5</span>
@@ -623,14 +500,125 @@
 
                             </div>
 
+                            <a href="https://github.com/henriqueptbd-cell/converter-sct" target="_blank"
+                                rel="noopener noreferrer">
+                                Ver projeto →
+                            </a>
+
                         </div>
 
-                        <a href="https://github.com/henriqueptbd-cell/Simulador-Provas" target="_blank"
-                            rel="noopener noreferrer" class="project-link">
-                            Ver projeto →
-                        </a>
-
                     </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =================================================
+             EXPERIÊNCIA
+        ================================================== -->
+
+        <section id="experiencia" class="section section-alt">
+
+            <div class="container">
+
+                <div class="section-header reveal">
+
+                    <p class="section-overline">
+                        Experiência
+                    </p>
+
+                    <h2>
+                        Experiência profissional além do código.
+                    </h2>
+
+                </div>
+
+
+                <div class="experience-content reveal">
+
+                    <div class="experience-item">
+
+                        <div class="experience-date">
+                            2020 — atual
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                HC Marcenaria
+                            </h3>
+
+                            <span>
+                                Fundador e Administrador
+                            </span>
+
+                            <p>
+                                Criação e gestão do negócio desde sua
+                                estruturação inicial, envolvendo
+                                atendimento, planejamento, compras,
+                                fornecedores, produção e processos.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="experience-item">
+
+                        <div class="experience-date">
+                            2019 — 2020
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Auto Nova
+                            </h3>
+
+                            <span>
+                                Área Administrativa
+                            </span>
+
+                            <p>
+                                Atendimento ao cliente, compras,
+                                relacionamento com fornecedores,
+                                estoque e organização administrativa.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="experience-item">
+
+                        <div class="experience-date">
+                            2014 — 2019
+                        </div>
+
+                        <div>
+
+                            <h3>
+                                Performance Car
+                            </h3>
+
+                            <span>
+                                Área Administrativa
+                            </span>
+
+                            <p>
+                                Atendimento, compras, controle de estoque,
+                                relacionamento com fornecedores e
+                                acompanhamento das demandas administrativas.
+                            </p>
+
+                        </div>
+
+                    </div>
 
                 </div>
 
@@ -641,29 +629,29 @@
 
         <!-- =================================================
              FORMAÇÃO
-             ================================================= -->
+        ================================================== -->
 
         <section id="formacao" class="section">
 
             <div class="container">
 
-                <div class="section-heading">
+                <div class="section-header reveal">
 
-                    <p class="eyebrow">
+                    <p class="section-overline">
                         Formação
                     </p>
 
                     <h2>
-                        Formação acadêmica e aprendizado contínuo.
+                        Construindo minha base em tecnologia.
                     </h2>
 
                 </div>
 
 
-                <div class="education-card">
+                <div class="education-card reveal">
 
-                    <span class="education-period">
-                        2026 – 2028
+                    <span class="education-year">
+                        2026 — 2028
                     </span>
 
                     <h3>
@@ -671,55 +659,16 @@
                     </h3>
 
                     <p>
-                        FATEC – Faculdade de Tecnologia do Estado de São Paulo
+                        FATEC — Faculdade de Tecnologia do Estado de São Paulo
                     </p>
 
-                    <span class="education-status">
-                        Graduação tecnológica · Em andamento
+                    <span>
+                        Graduação Tecnológica · Em andamento
                     </span>
 
-                </div>
-
-
-                <div class="certifications">
-
-                    <h3>
-                        Cursos e certificações
-                    </h3>
-
-                    <ul>
-
-                        <li>
-                            Desenvolvendo em React.js —
-                            Venturus / TIC em Trilhas / Softex / MCTI
-                        </li>
-
-                        <li>
-                            Introdução a React.js —
-                            Venturus / TIC em Trilhas / Softex / MCTI
-                        </li>
-
-                        <li>
-                            Introdução a Cloud —
-                            Venturus / TIC em Trilhas / Softex / MCTI
-                        </li>
-
-                        <li>
-                            Python Básico —
-                            Fundação Bradesco
-                        </li>
-
-                        <li>
-                            IT Essentials —
-                            Cisco Networking Academy
-                        </li>
-
-                        <li>
-                            Introduction to Cybersecurity —
-                            Cisco Networking Academy
-                        </li>
-
-                    </ul>
+                    <p class="education-note">
+                        Conclusão prevista para dezembro de 2028.
+                    </p>
 
                 </div>
 
@@ -729,36 +678,42 @@
 
 
         <!-- =================================================
-             ATUALMENTE
-             ================================================= -->
+             CONTATO
+        ================================================== -->
 
-        <section class="section section-highlight">
+        <section id="contato" class="section contact-section">
 
             <div class="container">
 
-                <div class="currently">
+                <div class="contact-content reveal">
 
-                    <p class="eyebrow">
-                        Atualmente
+                    <p class="section-overline">
+                        Contato
                     </p>
 
                     <h2>
-                        Construindo minha próxima etapa profissional.
+                        Vamos conversar?
                     </h2>
 
                     <p>
-                        Atualmente estou aprofundando meus conhecimentos
-                        em desenvolvimento backend, APIs REST, bancos
-                        de dados, arquitetura de software e engenharia
-                        de software, enquanto desenvolvo projetos próprios
-                        e acadêmicos.
+                        Estou em busca de uma oportunidade para
+                        ingressar profissionalmente na área de
+                        desenvolvimento de software.
                     </p>
 
-                    <p>
-                        Meu objetivo é ingressar profissionalmente na área
-                        de desenvolvimento de software e continuar evoluindo
-                        como desenvolvedor.
-                    </p>
+                    <div class="contact-actions">
+
+                        <a href="https://www.linkedin.com/in/henrique-camargo-6275a6394/" target="_blank"
+                            rel="noopener noreferrer" class="button button-primary">
+                            LinkedIn
+                        </a>
+
+                        <a href="https://github.com/henriqueptbd-cell" target="_blank" rel="noopener noreferrer"
+                            class="button button-secondary">
+                            GitHub
+                        </a>
+
+                    </div>
 
                 </div>
 
@@ -771,28 +726,20 @@
 
     <!-- =====================================================
          FOOTER
-         ===================================================== -->
+    ====================================================== -->
 
-    <footer>
+    <footer class="footer">
 
-        <div class="container footer-content">
+        <div class="container footer-container">
 
             <p>
                 Henrique G. Camargo
             </p>
 
-            <div>
-
-                <a href="https://github.com/henriqueptbd-cell" target="_blank" rel="noopener noreferrer">
-                    GitHub
-                </a>
-
-                <a href="https://www.linkedin.com/in/henrique-camargo-6275a6394/" target="_blank"
-                    rel="noopener noreferrer">
-                    LinkedIn
-                </a>
-
-            </div>
+            <p>
+                © <span id="current-year"></span>
+                · Desenvolvedor de Software em formação
+            </p>
 
         </div>
 

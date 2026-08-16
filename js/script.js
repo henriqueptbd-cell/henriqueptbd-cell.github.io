@@ -1,161 +1,120 @@
-document.addEventListener("DOMContentLoaded", () => {
+// =========================================================
+// HEADER — efeito ao rolar
+// =========================================================
 
-    /*
-     * =====================================================
-     * ANO AUTOMÁTICO NO FOOTER
-     * =====================================================
-     */
+const header = document.querySelector(".header");
 
-    const currentYear = document.querySelector("#current-year");
+function updateHeader() {
+    if (!header) return;
 
-    if (currentYear) {
-        currentYear.textContent = new Date().getFullYear();
+    if (window.scrollY > 30) {
+        header.classList.add("header-scrolled");
+    } else {
+        header.classList.remove("header-scrolled");
     }
+}
+
+window.addEventListener("scroll", updateHeader);
+
+updateHeader();
 
 
-    /*
-     * =====================================================
-     * MENU MOBILE
-     * =====================================================
-     */
+// =========================================================
+// MENU MOBILE
+// =========================================================
 
-    const menuButton = document.querySelector("#menu-button");
-    const navigation = document.querySelector("#navigation");
+const menuButton = document.querySelector(".menu-button");
+const navigation = document.querySelector(".navigation");
 
-    if (menuButton && navigation) {
+if (menuButton && navigation) {
 
-        menuButton.addEventListener("click", () => {
+    menuButton.addEventListener("click", () => {
+        navigation.classList.toggle("navigation-open");
 
-            navigation.classList.toggle("navigation-open");
+        const isOpen =
+            navigation.classList.contains("navigation-open");
 
-            const isOpen =
-                navigation.classList.contains("navigation-open");
+        menuButton.setAttribute(
+            "aria-expanded",
+            isOpen
+        );
+    });
+
+
+    // Fecha o menu quando clicar em um link
+
+    const navigationLinks =
+        navigation.querySelectorAll("a");
+
+    navigationLinks.forEach(link => {
+
+        link.addEventListener("click", () => {
+            navigation.classList.remove(
+                "navigation-open"
+            );
 
             menuButton.setAttribute(
                 "aria-expanded",
-                isOpen
+                "false"
             );
-
         });
 
-    }
+    });
+
+}
 
 
-    /*
-     * =====================================================
-     * FECHAR MENU AO CLICAR EM UM LINK
-     * =====================================================
-     */
+// =========================================================
+// ANIMAÇÃO DOS ELEMENTOS
+// =========================================================
 
-    if (navigation) {
+const revealElements =
+    document.querySelectorAll(".reveal");
 
-        const navigationLinks =
-            navigation.querySelectorAll("a");
+if (revealElements.length > 0) {
 
-        navigationLinks.forEach((link) => {
+    const observer =
+        new IntersectionObserver(
+            (entries) => {
 
-            link.addEventListener("click", () => {
+                entries.forEach(entry => {
 
-                navigation.classList.remove(
-                    "navigation-open"
-                );
+                    if (entry.isIntersecting) {
 
-                if (menuButton) {
-                    menuButton.setAttribute(
-                        "aria-expanded",
-                        "false"
-                    );
-                }
+                        entry.target.classList.add(
+                            "reveal-visible"
+                        );
 
-            });
+                        observer.unobserve(
+                            entry.target
+                        );
 
-        });
+                    }
 
-    }
+                });
 
-
-    /*
-     * =====================================================
-     * HEADER AO ROLAR A PÁGINA
-     * =====================================================
-     */
-
-    const header = document.querySelector(".header");
-
-    if (header) {
-
-        const updateHeader = () => {
-
-            if (window.scrollY > 20) {
-                header.classList.add("header-scrolled");
-            } else {
-                header.classList.remove("header-scrolled");
+            },
+            {
+                threshold: 0.1
             }
-
-        };
-
-        window.addEventListener(
-            "scroll",
-            updateHeader
         );
 
-        updateHeader();
 
-    }
+    revealElements.forEach(element => {
+        observer.observe(element);
+    });
+
+}
 
 
-    /*
-     * =====================================================
-     * REVELAÇÃO DAS SEÇÕES
-     * =====================================================
-     */
+// =========================================================
+// ANO AUTOMÁTICO DO FOOTER
+// =========================================================
 
-    const revealElements =
-        document.querySelectorAll(".reveal");
+const currentYear =
+    document.querySelector("#current-year");
 
-    if (
-        revealElements.length > 0 &&
-        "IntersectionObserver" in window
-    ) {
-
-        const observer =
-            new IntersectionObserver(
-                (entries, observer) => {
-
-                    entries.forEach((entry) => {
-
-                        if (entry.isIntersecting) {
-
-                            entry.target.classList.add(
-                                "reveal-visible"
-                            );
-
-                            observer.unobserve(
-                                entry.target
-                            );
-
-                        }
-
-                    });
-
-                },
-                {
-                    threshold: 0.12
-                }
-            );
-
-        revealElements.forEach((element) => {
-            observer.observe(element);
-        });
-
-    } else {
-
-        revealElements.forEach((element) => {
-            element.classList.add(
-                "reveal-visible"
-            );
-        });
-
-    }
-
-});
+if (currentYear) {
+    currentYear.textContent =
+        new Date().getFullYear();
+}
